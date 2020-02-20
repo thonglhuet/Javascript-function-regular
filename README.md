@@ -14,12 +14,13 @@ Lợi ích khi sử dụng:
 
 Example: 
 
+```
 const a = [1,2,3,4,5]
 
 console.log(a)    ->  (3) [1, 2, 3]
 
 console.log(...a) -> 1 2 3
-
+```
 
 2. filter
 
@@ -27,6 +28,7 @@ Trả về kết quả là array thoả màn điều kiện
 
 Example:
 
+```
 const arr = [1, 2, 3, 4, 5, 6];
 
 const filter = arr.filter(x => x < 3);
@@ -34,35 +36,42 @@ const filter = arr.filter(x => x < 3);
 console.log(filter); // output: [1, 2]
 
 console.log(arr); // output: [1, 2]
+```
 
 3. some 
 
 Check xem phần tử thoả mãn điều kiện có tồn tại trong array không
 
 Example:
+```
 
 const arr = [1, 2, 3, 4, 5, 6];
 
 const somed = arr.some((e) => e > 6);       // false
-
+```
 
 4. Every 
 
 Cũng là một method check phần tử thoả mãn điều kiện, nhưng mà là thoả mãn tất cả điều kiện
 
+```
 const arr = [1, 2, 3, 4, 5, 6]
 
 const everyed = arr.every((e) => e < 7);   // true 
+
+```
 
 
 5. concat
 
 Gộp 2 mảng lại với nhau 
 
+```
 const arr = [1, 2, 3, 4, 5, 6]
 
 [].concat(arr)    // [1, 2, 3, 4, 5, 6]
 
+```
 
 6. reduced
 
@@ -79,29 +88,23 @@ Method mình thích nhất và cũng là khó nhớ nhất. Có rất nhiều �
 
 
 Example: Đếm số lần xuất hiện phần tử
+```
 var names = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice'];
 
 var countedNames = names.reduce(function (allNames, name) { 
-
   if (name in allNames){
-  
     allNames[name]++
-    
   } else {
-  
     allNames[name] = 1
-    
   }
-  
   return allNames;
-  
 }, {});
 
 // countedNames is:
 
 // { 'Alice': 2, 'Bob': 1, 'Tiff': 1, 'Bruce': 1 }
 
-
+```
 
 
 
