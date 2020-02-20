@@ -1,6 +1,8 @@
 # Javascript-function-regular
 
-Đối với các web-developer thì việc làm việc với Javascript là điều không trành khỏi. Dưới đây là một số thứ sẽ làm tăng tốc độ code JS lên đáng kể
+Đối với các web-developer thì việc làm việc với Javascript là điều không trành khỏi. Dưới đây là một số thứ sẽ làm tăng tốc độ code JS lên đáng kể.
+
+Các hàm qúa quen thuộc mình sẽ k liệt kê ở đây
 
 ## Array method
 1. Spread operator
@@ -106,6 +108,62 @@ var countedNames = names.reduce(function (allNames, name) {
 
 ```
 
+## String method
+
+1. startsWith(), endsWith()
+
+Kiểm tra xem String có bắt đầu hoặc kết thúc với text
+
+```
+
+var str = 'Welcome to hell';
+
+console.log(str.startsWith('Welcome')); // true
+console.log(str.startsWith('Welcome', 5)); // false
+console.log(str.endsWith('Welcome')); // false
+
+```
+
+2. includes()
+
+Kiểm tra contain text 
+
+```
+var str = 'Welcome to hell';
+console.log(str.includes('Welcome')); // true
+console.log(str.includes('Welcome'), 5); // false 
+
+```
+
+3. slice()
+
+Tạo một chuỗi mới từ chuỗi ban đầu
 
 
+```
 
+var str = 'good luck, you are already in hell';
+console.log(str.slice()); // good luck, you are already in hell
+console.log(str.slice(4)); // luck, you are already in hell
+console.log(str.slice(1,6)); // ood l
+
+
+```
+
+4. split()
+
+Tách chuỗi thành mảng dựa vào separator
+
+```
+const monthString = 'Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec'
+monthString.split(",");   // ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+```
+5. repeat()
+
+Nhân chuỗi lên n lần
+
+```
+const monthString = "123 "
+monthString.repeat(3);   // "123 123 123"
+```
